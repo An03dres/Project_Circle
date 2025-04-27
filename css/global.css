@@ -1,0 +1,88 @@
+/* --- GLOBAL VARIABLES --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --Primary: #072ac8;
+  --PrimaryLight: #a2d6f9;
+  --PrimaryLighter: #d1edff;
+  --SecondaryLight: #fce300;
+  --SecondaryDark: #ffc600;
+  --NeutralLight: #f4f6fc;
+  --NeutralMedium: #6b708d;
+  --NeutralDark: #292e47;
+  --Wrong: #b33a3a;
+  --Right: #28a428;
+  --White: #fff;
+  --Black: #000;
+  --Background: #F2F4FC;
+}
+
+html,
+body {
+  text-align: center;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+}
+
+/* --- COMMON STYLES --- */
+
+a {
+  text-decoration: none;
+  color: var(--NeutralMedium);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--NeutralDark);
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--NeutralDark);
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-size: 24px;
+  color: var(--NeutralDark);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  visibility: hidden; /* Oculto por defecto */
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
