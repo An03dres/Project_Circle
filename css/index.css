@@ -77,6 +77,61 @@ section {
     bottom: -15%;
 }
 
+/* Animación de entrada para el texto */
+.hero-content h1, .hero-content h3 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .hero-content h1 {
+    animation-delay: 0.2s;
+  }
+  
+  .hero-content h3 {
+    animation-delay: 0.4s;
+  }
+  
+  /* Animación de entrada para los botones */
+  .hero-content-buttons a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.6s;
+  }
+  
+  /* Animación de entrada para las imágenes */
+  .hero-images img {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 1s ease-out forwards;
+    animation-delay: 0.8s;
+  }
+  
+  /* Keyframes para las animaciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
 /* --- CLIENTS SECTION --- */
 
 .clients {
@@ -93,6 +148,35 @@ section {
 .img-client:hover {
     filter: grayscale(0);
 }
+
+/* Animación inicial para las imágenes de memojis */
+.testimonial-memojis img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+  }
+  
+  /* Efecto al pasar el cursor */
+  .testimonial-memojis img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+    opacity: 1; /* Hace la imagen completamente visible */
+  }
+  
+  /* Animación de entrada para las imágenes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .testimonial-memojis img {
+    animation: fadeIn 1s ease-in-out;
+  }
+
 
 /* --- RECENT PROJECTS SECTION --- */
 
